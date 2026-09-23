@@ -2,11 +2,17 @@
 
 An independent reverse-engineering reference for the Traktor Kontrol S8, including USB/HID, LEDs and displays. Created by **gusgustavofreitas** with AI assistance.
 
+## Interactive Hardware Protocol Atlas
+
+**[▶ OPEN THE INTERACTIVE HARDWARE ATLAS](https://gusgustavodj.github.io/kontrol-s8-protocol/atlas/Kontrol-S8-Hardware-Protocol-Atlas-v1.00.html)**
+
+Browser-based, read-only reference. If GitHub Pages is not enabled yet, [open the original HTML source in the repository](atlas/Kontrol-S8-Hardware-Protocol-Atlas-v1.00.html).
+
 ### Related project — Mixxx Mappings
 
 This repository documents the independent Kontrol S8 hardware protocol. The companion [Kontrol S8 for Mixxx — Cross-Platform Mappings](https://github.com/gusgustavodj/kontrol-s8-mixxx-mappings) implements mappings for Mixxx, with Windows as its initial implementation and additional platforms welcome.
 
-The [interactive Hardware Protocol Atlas](atlas/Kontrol-S8-Hardware-Protocol-Atlas-v1.00.html) helps locate physical controls, inspect HID INPUT addresses, consult HID OUTPUT/LED messages, and review Displays/Bulk records. Supporting material covers USB/audio architecture, HID INPUT, HID OUTPUT/LEDs, Displays/Bulk, and CSV/JSON data. See [overview](docs/overview.md), [known limitations](docs/known-limitations.md), and [contribution guide](docs/contribution-guide.md).
+The [interactive Hardware Protocol Atlas](https://gusgustavodj.github.io/kontrol-s8-protocol/atlas/Kontrol-S8-Hardware-Protocol-Atlas-v1.00.html) helps locate physical controls, inspect HID INPUT addresses, consult HID OUTPUT/LED messages, and review Displays/Bulk records. Supporting material covers USB/audio architecture, HID INPUT, HID OUTPUT/LEDs, Displays/Bulk, and CSV/JSON data. See [overview](docs/overview.md), [known limitations](docs/known-limitations.md), and [contribution guide](docs/contribution-guide.md).
 
 The independent tables report 181 HID INPUT rows; the Atlas has 185 INPUT records, 154 OUTPUT records and 164 assemblies under separately documented criteria. Public transport inventories contain 122 addressed source rows: 110 HID Output, 2 Feature, 8 USB control OUT and 2 optional display initialization records. The shared pad palette documents 17 transmitted values. See the linked technical records for evidence and limitations.
 
