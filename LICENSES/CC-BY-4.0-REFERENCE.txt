@@ -1,7 +1,0 @@
-Creative Commons Attribution 4.0 International (CC BY 4.0)
-
-The original project documentation and protocol tables are made available under the unmodified CC BY 4.0 legal code. The license applies only to rights held by the creator and does not cover third-party material, software code (which is under the MIT License), trademarks, firmware, drivers, or raw captures.
-
-Official, unmodified legal code: https://creativecommons.org/licenses/by/4.0/legalcode
-License deed: https://creativecommons.org/licenses/by/4.0/
-Attribution: gusgustavofreitas. Indicate changes when redistributing adaptations. No endorsement is implied.

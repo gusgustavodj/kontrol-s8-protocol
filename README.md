@@ -18,4 +18,4 @@ Contributions are reviewed before incorporation. The maintainer decides whether 
 
 ## License and notices
 
-Original protocol documentation and tables are licensed under [CC BY 4.0](LICENSES/CC-BY-4.0-REFERENCE.txt), limited to rights held by the creator. Atlas software code and the technical overlay are licensed under the MIT License in [LICENSE](LICENSE). See [license scope](docs/licensing.md) and [NOTICE.md](NOTICE.md). Third-party material, trademarks, firmware, drivers and raw captures are not relicensed.
+Original protocol documentation and tables are licensed under [CC BY 4.0](LICENSES/CC-BY-4.0.txt), limited to rights held by the creator. Atlas software code and the technical overlay are licensed under the MIT License in [LICENSE](LICENSE). See [license scope](docs/licensing.md) and [NOTICE.md](NOTICE.md). Third-party material, trademarks, firmware, drivers and raw captures are not relicensed.
