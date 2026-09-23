@@ -6,7 +6,6 @@ An independent reverse-engineering reference for the Traktor Kontrol S8, includi
 
 **[▶ OPEN THE INTERACTIVE HARDWARE ATLAS](https://gusgustavodj.github.io/kontrol-s8-protocol/atlas/Kontrol-S8-Hardware-Protocol-Atlas-v1.00.html)**
 
-Browser-based, read-only reference. If GitHub Pages is not enabled yet, [open the original HTML source in the repository](atlas/Kontrol-S8-Hardware-Protocol-Atlas-v1.00.html).
 
 ### Related project — Mixxx Mappings
 
