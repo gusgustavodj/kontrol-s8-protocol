@@ -1,4 +1,4 @@
-# Traktor Kontrol S8 Hardware Protocol — Independent Reference
+# Traktor Kontrol S8 Hardware Protocol — Independent Reverse Engineering
 
 An independent reverse-engineering reference for the Traktor Kontrol S8, including USB/HID, LEDs and displays. Created by **gusgustavofreitas** with AI assistance.
 
