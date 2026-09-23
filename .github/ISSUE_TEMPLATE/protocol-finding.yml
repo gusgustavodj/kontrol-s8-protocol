@@ -1,0 +1,26 @@
+name: Protocol finding or correction
+description: Report a protocol observation, documentation correction, compatibility result, or technical question
+title: "[Protocol] "
+labels: []
+body:
+  - type: markdown
+    attributes:
+      value: "Do not include private information, proprietary captures, or raw USB/HID captures. Share only material you have rights to publish."
+  - type: textarea
+    id: summary
+    attributes:
+      label: Finding, question, or correction
+    validations:
+      required: true
+  - type: input
+    id: hardware
+    attributes:
+      label: Device/firmware and setup, if known
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Public evidence or reproducible steps
+  - type: textarea
+    id: impact
+    attributes:
+      label: Documentation or compatibility impact

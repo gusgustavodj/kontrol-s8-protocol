@@ -1,0 +1,134 @@
+[
+  {
+    "interface": 0,
+    "alternate": 0,
+    "class_subclass_protocol": "01/01/20",
+    "endpoint": null,
+    "transfer_type": null,
+    "direction": null,
+    "max_packet_size": null,
+    "function": "UAC2 Audio Control; controle via EP0 comum",
+    "evidence_ref": "U02"
+  },
+  {
+    "interface": 1,
+    "alternate": 0,
+    "class_subclass_protocol": "01/02/20",
+    "endpoint": null,
+    "transfer_type": null,
+    "direction": null,
+    "max_packet_size": null,
+    "function": "Playback zero bandwidth",
+    "evidence_ref": "U02"
+  },
+  {
+    "interface": 1,
+    "alternate": 1,
+    "class_subclass_protocol": "01/02/20",
+    "endpoint": "0x01",
+    "transfer_type": "ISOCHRONOUS",
+    "direction": "HOST_TO_S8",
+    "max_packet_size": 112,
+    "function": "Playback; 4 canais; 24 bits em subslot de 4 bytes",
+    "evidence_ref": "U01;U02"
+  },
+  {
+    "interface": 1,
+    "alternate": 1,
+    "class_subclass_protocol": "01/02/20",
+    "endpoint": "0x81",
+    "transfer_type": "ISOCHRONOUS",
+    "direction": "S8_TO_HOST",
+    "max_packet_size": 4,
+    "function": "Feedback described; data not verified",
+    "evidence_ref": "U01;U02"
+  },
+  {
+    "interface": 2,
+    "alternate": 0,
+    "class_subclass_protocol": "01/02/20",
+    "endpoint": null,
+    "transfer_type": null,
+    "direction": null,
+    "max_packet_size": null,
+    "function": "Capture zero bandwidth",
+    "evidence_ref": "U02"
+  },
+  {
+    "interface": 2,
+    "alternate": 1,
+    "class_subclass_protocol": "01/02/20",
+    "endpoint": "0x82",
+    "transfer_type": "ISOCHRONOUS",
+    "direction": "S8_TO_HOST",
+    "max_packet_size": 280,
+    "function": "Capture descrito; 10 canais; 24 bits em subslot de 4 bytes",
+    "evidence_ref": "U01;U02"
+  },
+  {
+    "interface": 3,
+    "alternate": 0,
+    "class_subclass_protocol": "01/03/00",
+    "endpoint": "0x02",
+    "transfer_type": "BULK",
+    "direction": "HOST_TO_S8",
+    "max_packet_size": 512,
+    "function": "MIDI Streaming 1.0; messages not validated",
+    "evidence_ref": "U01;U02"
+  },
+  {
+    "interface": 3,
+    "alternate": 0,
+    "class_subclass_protocol": "01/03/00",
+    "endpoint": "0x83",
+    "transfer_type": "BULK",
+    "direction": "S8_TO_HOST",
+    "max_packet_size": 512,
+    "function": "MIDI Streaming 1.0; messages not validated",
+    "evidence_ref": "U01;U02"
+  },
+  {
+    "interface": 4,
+    "alternate": 0,
+    "class_subclass_protocol": "FE/01/01",
+    "endpoint": null,
+    "transfer_type": null,
+    "direction": null,
+    "max_packet_size": null,
+    "function": "DFU runtime; controle via EP0 comum; fora de escopo",
+    "evidence_ref": "U01;U02"
+  },
+  {
+    "interface": 5,
+    "alternate": 0,
+    "class_subclass_protocol": "03/00/00",
+    "endpoint": "0x84",
+    "transfer_type": "INTERRUPT",
+    "direction": "S8_TO_HOST",
+    "max_packet_size": 64,
+    "function": "HID IN",
+    "evidence_ref": "U01;U02;U03"
+  },
+  {
+    "interface": 5,
+    "alternate": 0,
+    "class_subclass_protocol": "03/00/00",
+    "endpoint": "0x03",
+    "transfer_type": "INTERRUPT",
+    "direction": "HOST_TO_S8",
+    "max_packet_size": 64,
+    "function": "HID OUT",
+    "evidence_ref": "U01;U02;U03"
+  },
+  {
+    "interface": 6,
+    "alternate": 0,
+    "class_subclass_protocol": "FF/BD/00",
+    "endpoint": "0x04",
+    "transfer_type": "BULK",
+    "direction": "HOST_TO_S8",
+    "max_packet_size": 512,
+    "function": "Display",
+    "evidence_ref": "U01;U02;D01"
+  }
+]

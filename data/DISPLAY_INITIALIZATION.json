@@ -1,0 +1,32 @@
+[
+  {
+    "control_or_mapping": "DISPLAY_INIT",
+    "mapping_function": "DISPLAY_INIT",
+    "transport": "OPTIONAL_DISPLAY_FEATURE_REPORT",
+    "report_id_or_request_code": "0xF8",
+    "offset_without_report_id": "0;1;2;3;4;5;6;7;8;9",
+    "offset_with_report_id": "1;2;3;4;5;6;7;8;9;10",
+    "field_encoding_or_mask": "FIXED_SEQUENCE",
+    "activation_value": "E0 01 10 01 05 60 00 64 32 00",
+    "deactivation_value": "NOT_APPLICABLE",
+    "dim_value": "NOT_APPLICABLE",
+    "logical_state": "",
+    "platform": "Windows",
+    "evidence_status": "Physical light response not reported."
+  },
+  {
+    "control_or_mapping": "DISPLAY_INIT",
+    "mapping_function": "DISPLAY INIT",
+    "transport": "OPTIONAL_DISPLAY_FEATURE_REPORT",
+    "report_id_or_request_code": "0xF8",
+    "offset_without_report_id": "0;1;2;3;4;5;6;7;8;9",
+    "offset_with_report_id": "1;2;3;4;5;6;7;8;9;10",
+    "field_encoding_or_mask": "",
+    "activation_value": "NOT_DISCLOSED_PENDING_AUTHORIZATION",
+    "deactivation_value": "NOT_APPLICABLE",
+    "dim_value": "NOT_APPLICABLE",
+    "logical_state": "startup",
+    "platform": "Windows/Mixxx",
+    "evidence_status": "Source-backed initialization statement; this is not a physical LED test."
+  }
+]

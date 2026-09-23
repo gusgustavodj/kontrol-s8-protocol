@@ -1,0 +1,70 @@
+[
+  {
+    "name": "RED",
+    "bytes": "10 00 00"
+  },
+  {
+    "name": "ORANGE",
+    "bytes": "10 02 00"
+  },
+  {
+    "name": "LIGHT ORANGE",
+    "bytes": "10 04 00"
+  },
+  {
+    "name": "WARM YELLOW",
+    "bytes": "10 08 00"
+  },
+  {
+    "name": "YELLOW",
+    "bytes": "0F 0E 00"
+  },
+  {
+    "name": "LIME",
+    "bytes": "08 10 00"
+  },
+  {
+    "name": "GREEN",
+    "bytes": "00 10 00"
+  },
+  {
+    "name": "MINT",
+    "bytes": "00 10 08"
+  },
+  {
+    "name": "CYAN",
+    "bytes": "00 10 0E"
+  },
+  {
+    "name": "TURQUOISE",
+    "bytes": "00 08 10"
+  },
+  {
+    "name": "BLUE",
+    "bytes": "00 00 10"
+  },
+  {
+    "name": "PLUM",
+    "bytes": "02 00 10"
+  },
+  {
+    "name": "VIOLET",
+    "bytes": "04 00 10"
+  },
+  {
+    "name": "PURPLE",
+    "bytes": "0A 00 0A"
+  },
+  {
+    "name": "MAGENTA",
+    "bytes": "10 00 05"
+  },
+  {
+    "name": "FUCHSIA",
+    "bytes": "10 00 02"
+  },
+  {
+    "name": "WHITE",
+    "bytes": "0E 10 05"
+  }
+]

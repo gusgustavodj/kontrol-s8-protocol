@@ -1,0 +1,354 @@
+[
+  {
+    "platform": "Windows",
+    "subsystem": "Enumeration",
+    "status": "DESCRIPTOR_OBSERVED",
+    "evidence": "VID/PID and convergent topology",
+    "limitation": "SET_ADDRESS/electrical plug events absent",
+    "evidence_ref": "U01;U04;P01"
+  },
+  {
+    "platform": "Windows",
+    "subsystem": "Audio playback",
+    "status": "OBSERVED",
+    "evidence": "Four outputs and WDM traffic",
+    "limitation": "No latency or long-term stability metric",
+    "evidence_ref": "A01;A02;P01"
+  },
+  {
+    "platform": "Windows",
+    "subsystem": "Audio capture",
+    "status": "CAPABILITY_AND_TRAFFIC_OBSERVED",
+    "evidence": "Ten inputs in probe; ISO capture in a separate sample",
+    "limitation": "Capability probe did not start a stream or validate sound by channel",
+    "evidence_ref": "A01;A02;P01"
+  },
+  {
+    "platform": "Windows",
+    "subsystem": "HID IN",
+    "status": "MAPPED_WITH_HISTORICAL_PHYSICAL_EVIDENCE",
+    "evidence": "Shared inventory of 181 signals; identity and field derived from a physical Windows capture: 163 of 165 resolved (100 confirmed, 1 corrected, 62 added by later capture)",
+    "limitation": "No raw descriptor; two touchstrip position GAPs in this version; physical mapping is not functional validation of 181 commands",
+    "evidence_ref": "H01;H02"
+  },
+  {
+    "platform": "Windows",
+    "subsystem": "HID OUT",
+    "status": "PARTIAL_PHYSICAL",
+    "evidence": "PLAY/CUE/FLUX A/B with feedback",
+    "limitation": "Broad map incomplete; does not imply independent F4 transmission",
+    "evidence_ref": "L04;P01"
+  },
+  {
+    "platform": "Windows",
+    "subsystem": "F4",
+    "status": "OBSERVED",
+    "evidence": "F4/26 and F4/24 observed in traffic",
+    "limitation": "Independent transmission not validated",
+    "evidence_ref": "L01"
+  },
+  {
+    "platform": "Windows",
+    "subsystem": "F8",
+    "status": "OBSERVED_AND_STARTUP_REPRODUCED",
+    "evidence": "F8 before IF6 and complete startup once",
+    "limitation": "Three variants; isolated necessity and byte 8 unknown",
+    "evidence_ref": "D02;I01"
+  },
+  {
+    "platform": "Windows",
+    "subsystem": "Display/BULK",
+    "status": "PHYSICALLY_VALIDATED_WITH_GAP",
+    "evidence": "Later dual-display result confirmed",
+    "limitation": "NI driver; Browse gap; first write has a timing caveat",
+    "evidence_ref": "W01;W04;W05"
+  },
+  {
+    "platform": "Windows",
+    "subsystem": "Coexistence",
+    "status": "PARTIAL",
+    "evidence": "HID/display coexist in the reported Windows path",
+    "limitation": "Long session of all subsystems not validated",
+    "evidence_ref": "P01"
+  },
+  {
+    "platform": "Windows",
+    "subsystem": "Service independence",
+    "status": "VALIDATED_NARROW_SCOPE",
+    "evidence": "Startup/recovery with NIHardwareService stopped",
+    "limitation": "niks8usb driver remains; this does not replace the stack",
+    "evidence_ref": "I01;N01"
+  },
+  {
+    "platform": "Windows",
+    "subsystem": "Physical validation",
+    "status": "PARTIAL_BY_SUBSYSTEM",
+    "evidence": "Startup, dual displays and partial feedback reported",
+    "limitation": "Not certification of all 181 controls, audio and LEDs",
+    "evidence_ref": "I01;W05;L04;P01"
+  },
+  {
+    "platform": "Android",
+    "subsystem": "Enumeration",
+    "status": "DESCRIPTOR_OBSERVED",
+    "evidence": "VID/PID and IF0–IF6 over cycles",
+    "limitation": "Short sample; hardware revision not declared",
+    "evidence_ref": "U02;U04;P01"
+  },
+  {
+    "platform": "Android",
+    "subsystem": "Audio playback",
+    "status": "PHYSICALLY_VALIDATED",
+    "evidence": "AudioTrack, 48 kHz, four channels, MASTER/CUE mapping",
+    "limitation": "10 s; no low-latency characterization",
+    "evidence_ref": "A03;A04"
+  },
+  {
+    "platform": "Android",
+    "subsystem": "Audio capture",
+    "status": "NOT_IMPLEMENTED",
+    "evidence": "Policy does not confirm a functional 10-channel mask",
+    "limitation": "Input mission deferred; do not treat the probe as validated capture",
+    "evidence_ref": "P01"
+  },
+  {
+    "platform": "Android",
+    "subsystem": "HID IN",
+    "status": "PARTIAL_WITH_PHYSICAL_TRIAL_EVIDENCE",
+    "evidence": "Same shared inventory of 181 signals; startup with active IF5 input; eight semantic bindings in one specific trial",
+    "limitation": "Eight is the scope of trial M044, not total Android coverage; broad offline decoding is not physical validation",
+    "evidence_ref": "H01;H02;I03;H05"
+  },
+  {
+    "platform": "Android",
+    "subsystem": "HID OUT",
+    "status": "NOT_PHYSICALLY_TESTED_FOR_LEDS",
+    "evidence": "EP03 used in complete startup; generic API exists",
+    "limitation": "Startup use does not validate LED mapping or feedback",
+    "evidence_ref": "I02;I03;P01"
+  },
+  {
+    "platform": "Android",
+    "subsystem": "F4",
+    "status": "NOT_PHYSICALLY_TESTED",
+    "evidence": "Experimental contract/API",
+    "limitation": "No Android F4 proof",
+    "evidence_ref": "L03;P01"
+  },
+  {
+    "platform": "Android",
+    "subsystem": "F8",
+    "status": "PARTIAL_DEPENDENT_ON_OWNERSHIP",
+    "evidence": "Integrated into experimental physical startup; attempt under usbhid failed −1",
+    "limitation": "No universal autonomous success via controlTransfer or choice among variants",
+    "evidence_ref": "I02;I03;D02;P01"
+  },
+  {
+    "platform": "Android",
+    "subsystem": "Display/BULK",
+    "status": "PHYSICALLY_VALIDATED_DIAGNOSTIC_SCOPE",
+    "evidence": "20 LEFT + 20 RIGHT with exact completion",
+    "limitation": "Continuous IF5 disabled; later frontend not validated end to end",
+    "evidence_ref": "C01;D03;P01"
+  },
+  {
+    "platform": "Android",
+    "subsystem": "Coexistence",
+    "status": "PARTIAL",
+    "evidence": "IF5/IF6 startup before playback; bindings coexisted",
+    "limitation": "No simultaneous continuous HID/display/audio/MIDI in a long session",
+    "evidence_ref": "C01;C02;P01"
+  },
+  {
+    "platform": "Android",
+    "subsystem": "Service independence",
+    "status": "OBSERVED_DIAGNOSTIC_SCOPE",
+    "evidence": "Startup and HID without NIHardwareService/Traktor; audio without NI driver",
+    "limitation": "Does not imply stack parity or complete support",
+    "evidence_ref": "I03;A03;N01"
+  },
+  {
+    "platform": "Android",
+    "subsystem": "Physical validation",
+    "status": "PARTIAL_BY_SUBSYSTEM",
+    "evidence": "Startup with live input, eight semantic bindings, 40 display frames and four audio outputs",
+    "limitation": "Separate diagnostic trials; eight is the scope of one trial, not total Android coverage; no integrated continuous session",
+    "evidence_ref": "I03;H05;C01;A03;A04;P01"
+  },
+  {
+    "platform": "Linux",
+    "subsystem": "Enumeration",
+    "status": "NOT_VALIDATED_IN_THIS_SET",
+    "evidence": "No current result for this subsystem",
+    "limitation": "Historical result does not establish current firmware or revision compatibility",
+    "evidence_ref": "P01"
+  },
+  {
+    "platform": "macOS",
+    "subsystem": "Enumeration",
+    "status": "NOT_FOUND",
+    "evidence": "No operational evidence located",
+    "limitation": "Updater package does not constitute support or a test",
+    "evidence_ref": "P01"
+  },
+  {
+    "platform": "Linux",
+    "subsystem": "Audio playback",
+    "status": "NOT_VALIDATED_IN_THIS_SET",
+    "evidence": "No current result for this subsystem",
+    "limitation": "Historical result does not establish current firmware or revision compatibility",
+    "evidence_ref": "P01"
+  },
+  {
+    "platform": "macOS",
+    "subsystem": "Audio playback",
+    "status": "NOT_FOUND",
+    "evidence": "No operational evidence located",
+    "limitation": "Updater package does not constitute support or a test",
+    "evidence_ref": "P01"
+  },
+  {
+    "platform": "Linux",
+    "subsystem": "Audio capture",
+    "status": "NOT_VALIDATED_IN_THIS_SET",
+    "evidence": "No current result for this subsystem",
+    "limitation": "Historical result does not establish current firmware or revision compatibility",
+    "evidence_ref": "P01"
+  },
+  {
+    "platform": "macOS",
+    "subsystem": "Audio capture",
+    "status": "NOT_FOUND",
+    "evidence": "No operational evidence located",
+    "limitation": "Updater package does not constitute support or a test",
+    "evidence_ref": "P01"
+  },
+  {
+    "platform": "Linux",
+    "subsystem": "HID IN",
+    "status": "PARTIAL_HISTORICAL",
+    "evidence": "Historical HID reference and MIDI preset; no current native proof",
+    "limitation": "Historical result does not establish current firmware or revision compatibility",
+    "evidence_ref": "P01"
+  },
+  {
+    "platform": "macOS",
+    "subsystem": "HID IN",
+    "status": "NOT_FOUND",
+    "evidence": "No operational evidence located",
+    "limitation": "Updater package does not constitute support or a test",
+    "evidence_ref": "P01"
+  },
+  {
+    "platform": "Linux",
+    "subsystem": "HID OUT",
+    "status": "NOT_VALIDATED_IN_THIS_SET",
+    "evidence": "No current result for this subsystem",
+    "limitation": "Historical result does not establish current firmware or revision compatibility",
+    "evidence_ref": "P01"
+  },
+  {
+    "platform": "macOS",
+    "subsystem": "HID OUT",
+    "status": "NOT_FOUND",
+    "evidence": "No operational evidence located",
+    "limitation": "Updater package does not constitute support or a test",
+    "evidence_ref": "P01"
+  },
+  {
+    "platform": "Linux",
+    "subsystem": "F4",
+    "status": "NOT_VALIDATED_IN_THIS_SET",
+    "evidence": "No current result for this subsystem",
+    "limitation": "Historical result does not establish current firmware or revision compatibility",
+    "evidence_ref": "P01"
+  },
+  {
+    "platform": "macOS",
+    "subsystem": "F4",
+    "status": "NOT_FOUND",
+    "evidence": "No operational evidence located",
+    "limitation": "Updater package does not constitute support or a test",
+    "evidence_ref": "P01"
+  },
+  {
+    "platform": "Linux",
+    "subsystem": "F8",
+    "status": "NOT_VALIDATED_IN_THIS_SET",
+    "evidence": "No current result for this subsystem",
+    "limitation": "Historical result does not establish current firmware or revision compatibility",
+    "evidence_ref": "P01"
+  },
+  {
+    "platform": "macOS",
+    "subsystem": "F8",
+    "status": "NOT_FOUND",
+    "evidence": "No operational evidence located",
+    "limitation": "Updater package does not constitute support or a test",
+    "evidence_ref": "P01"
+  },
+  {
+    "platform": "Linux",
+    "subsystem": "Display/BULK",
+    "status": "NOT_VALIDATED_IN_THIS_SET",
+    "evidence": "No current result for this subsystem",
+    "limitation": "Historical result does not establish current firmware or revision compatibility",
+    "evidence_ref": "P01"
+  },
+  {
+    "platform": "macOS",
+    "subsystem": "Display/BULK",
+    "status": "NOT_FOUND",
+    "evidence": "No operational evidence located",
+    "limitation": "Updater package does not constitute support or a test",
+    "evidence_ref": "P01"
+  },
+  {
+    "platform": "Linux",
+    "subsystem": "Coexistence",
+    "status": "NOT_VALIDATED_IN_THIS_SET",
+    "evidence": "No current result for this subsystem",
+    "limitation": "Historical result does not establish current firmware or revision compatibility",
+    "evidence_ref": "P01"
+  },
+  {
+    "platform": "macOS",
+    "subsystem": "Coexistence",
+    "status": "NOT_FOUND",
+    "evidence": "No operational evidence located",
+    "limitation": "Updater package does not constitute support or a test",
+    "evidence_ref": "P01"
+  },
+  {
+    "platform": "Linux",
+    "subsystem": "Service independence",
+    "status": "NOT_APPLICABLE_TO_WINDOWS_SERVICE",
+    "evidence": "No current result for this subsystem",
+    "limitation": "Historical result does not establish current firmware or revision compatibility",
+    "evidence_ref": "P01"
+  },
+  {
+    "platform": "macOS",
+    "subsystem": "Service independence",
+    "status": "NOT_FOUND",
+    "evidence": "No operational evidence located",
+    "limitation": "Updater package does not constitute support or a test",
+    "evidence_ref": "P01"
+  },
+  {
+    "platform": "Linux",
+    "subsystem": "Physical validation",
+    "status": "NOT_VALIDATED_IN_THIS_SET",
+    "evidence": "No current result for this subsystem",
+    "limitation": "Historical result does not establish current firmware or revision compatibility",
+    "evidence_ref": "P01"
+  },
+  {
+    "platform": "macOS",
+    "subsystem": "Physical validation",
+    "status": "NOT_FOUND",
+    "evidence": "No operational evidence located",
+    "limitation": "Updater package does not constitute support or a test",
+    "evidence_ref": "P01"
+  }
+]

@@ -1,0 +1,32 @@
+[
+  {
+    "control_or_mapping": "MIXER_FILTER_A_B_C_D",
+    "mapping_function": "MIXER_FILTER_A_B_C_D",
+    "transport": "HID_FEATURE_REPORT",
+    "report_id_or_request_code": "0xF4",
+    "offset_without_report_id": "0;1",
+    "offset_with_report_id": "1;2",
+    "field_encoding_or_mask": "FIXED_PREFIX_PLUS_BITMASK",
+    "activation_value": "0x25 0x0F",
+    "deactivation_value": "0x25 0x00",
+    "dim_value": "NOT_APPLICABLE",
+    "logical_state": "",
+    "platform": "Windows",
+    "evidence_status": "Physical light response not reported."
+  },
+  {
+    "control_or_mapping": "MIXER_FILTER_A_B_C_D",
+    "mapping_function": "MIXER FILTER STATE ABCD",
+    "transport": "HID_FEATURE_REPORT",
+    "report_id_or_request_code": "0xF4",
+    "offset_without_report_id": "0;1",
+    "offset_with_report_id": "1;2",
+    "field_encoding_or_mask": "",
+    "activation_value": "0x25 0x0F",
+    "deactivation_value": "0x25 0x00",
+    "dim_value": "NOT_APPLICABLE",
+    "logical_state": "QuickEffect enabled A=01 B=02 C=04 D=08 OR",
+    "platform": "Windows/Mixxx",
+    "evidence_status": "Physical pass stated in source evidence; individual test scope is not reproduced here."
+  }
+]

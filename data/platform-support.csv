@@ -1,0 +1,45 @@
+platform,subsystem,status,evidence,limitation,evidence_ref
+Windows,Enumeration,DESCRIPTOR_OBSERVED,VID/PID and convergent topology,SET_ADDRESS/electrical plug events absent,U01;U04;P01
+Windows,Audio playback,OBSERVED,Four outputs and WDM traffic,No latency or long-term stability metric,A01;A02;P01
+Windows,Audio capture,CAPABILITY_AND_TRAFFIC_OBSERVED,Ten inputs in probe; ISO capture in a separate sample,Capability probe did not start a stream or validate sound by channel,A01;A02;P01
+Windows,HID IN,MAPPED_WITH_HISTORICAL_PHYSICAL_EVIDENCE,"Shared inventory of 181 signals; identity and field derived from a physical Windows capture: 163 of 165 resolved (100 confirmed, 1 corrected, 62 added by later capture)","No raw descriptor; two touchstrip position GAPs in this version; physical mapping is not functional validation of 181 commands",H01;H02
+Windows,HID OUT,PARTIAL_PHYSICAL,PLAY/CUE/FLUX A/B with feedback,Broad map incomplete; does not imply independent F4 transmission,L04;P01
+Windows,F4,OBSERVED,F4/26 and F4/24 observed in traffic,Independent transmission not validated,L01
+Windows,F8,OBSERVED_AND_STARTUP_REPRODUCED,F8 before IF6 and complete startup once,Three variants; isolated necessity and byte 8 unknown,D02;I01
+Windows,Display/BULK,PHYSICALLY_VALIDATED_WITH_GAP,Later dual-display result confirmed,NI driver; Browse gap; first write has a timing caveat,W01;W04;W05
+Windows,Coexistence,PARTIAL,HID/display coexist in the reported Windows path,Long session of all subsystems not validated,P01
+Windows,Service independence,VALIDATED_NARROW_SCOPE,Startup/recovery with NIHardwareService stopped,niks8usb driver remains; this does not replace the stack,I01;N01
+Windows,Physical validation,PARTIAL_BY_SUBSYSTEM,"Startup, dual displays and partial feedback reported",Not certification of all 181 controls, audio and LEDs,I01;W05;L04;P01
+Android,Enumeration,DESCRIPTOR_OBSERVED,VID/PID and IF0–IF6 over cycles,Short sample; hardware revision not declared,U02;U04;P01
+Android,Audio playback,PHYSICALLY_VALIDATED,"AudioTrack, 48 kHz, four channels, MASTER/CUE mapping",10 s; no low-latency characterization,A03;A04
+Android,Audio capture,NOT_IMPLEMENTED,Policy does not confirm a functional 10-channel mask,Input mission deferred; do not treat the probe as validated capture,P01
+Android,HID IN,PARTIAL_WITH_PHYSICAL_TRIAL_EVIDENCE,"Same shared inventory of 181 signals; startup with active IF5 input; eight semantic bindings in one specific trial","Eight is the scope of trial M044, not total Android coverage; broad offline decoding is not physical validation",H01;H02;I03;H05
+Android,HID OUT,NOT_PHYSICALLY_TESTED_FOR_LEDS,EP03 used in complete startup; generic API exists,Startup use does not validate LED mapping or feedback,I02;I03;P01
+Android,F4,NOT_PHYSICALLY_TESTED,Experimental contract/API,No Android F4 proof,L03;P01
+Android,F8,PARTIAL_DEPENDENT_ON_OWNERSHIP,Integrated into experimental physical startup; attempt under usbhid failed −1,No universal autonomous success via controlTransfer or choice among variants,I02;I03;D02;P01
+Android,Display/BULK,PHYSICALLY_VALIDATED_DIAGNOSTIC_SCOPE,20 LEFT + 20 RIGHT with exact completion,Continuous IF5 disabled; later frontend not validated end to end,C01;D03;P01
+Android,Coexistence,PARTIAL,IF5/IF6 startup before playback; bindings coexisted,No simultaneous continuous HID/display/audio/MIDI in a long session,C01;C02;P01
+Android,Service independence,OBSERVED_DIAGNOSTIC_SCOPE,Startup and HID without NIHardwareService/Traktor; audio without NI driver,Does not imply stack parity or complete support,I03;A03;N01
+Android,Physical validation,PARTIAL_BY_SUBSYSTEM,"Startup with live input, eight semantic bindings, 40 display frames and four audio outputs","Separate diagnostic trials; eight is the scope of one trial, not total Android coverage; no integrated continuous session",I03;H05;C01;A03;A04;P01
+Linux,Enumeration,NOT_VALIDATED_IN_THIS_SET,No current result for this subsystem,Historical result does not establish current firmware or revision compatibility,P01
+macOS,Enumeration,NOT_FOUND,No operational evidence located,Updater package does not constitute support or a test,P01
+Linux,Audio playback,NOT_VALIDATED_IN_THIS_SET,No current result for this subsystem,Historical result does not establish current firmware or revision compatibility,P01
+macOS,Audio playback,NOT_FOUND,No operational evidence located,Updater package does not constitute support or a test,P01
+Linux,Audio capture,NOT_VALIDATED_IN_THIS_SET,No current result for this subsystem,Historical result does not establish current firmware or revision compatibility,P01
+macOS,Audio capture,NOT_FOUND,No operational evidence located,Updater package does not constitute support or a test,P01
+Linux,HID IN,PARTIAL_HISTORICAL,Historical HID reference and MIDI preset; no current native proof,Historical result does not establish current firmware or revision compatibility,P01
+macOS,HID IN,NOT_FOUND,No operational evidence located,Updater package does not constitute support or a test,P01
+Linux,HID OUT,NOT_VALIDATED_IN_THIS_SET,No current result for this subsystem,Historical result does not establish current firmware or revision compatibility,P01
+macOS,HID OUT,NOT_FOUND,No operational evidence located,Updater package does not constitute support or a test,P01
+Linux,F4,NOT_VALIDATED_IN_THIS_SET,No current result for this subsystem,Historical result does not establish current firmware or revision compatibility,P01
+macOS,F4,NOT_FOUND,No operational evidence located,Updater package does not constitute support or a test,P01
+Linux,F8,NOT_VALIDATED_IN_THIS_SET,No current result for this subsystem,Historical result does not establish current firmware or revision compatibility,P01
+macOS,F8,NOT_FOUND,No operational evidence located,Updater package does not constitute support or a test,P01
+Linux,Display/BULK,NOT_VALIDATED_IN_THIS_SET,No current result for this subsystem,Historical result does not establish current firmware or revision compatibility,P01
+macOS,Display/BULK,NOT_FOUND,No operational evidence located,Updater package does not constitute support or a test,P01
+Linux,Coexistence,NOT_VALIDATED_IN_THIS_SET,No current result for this subsystem,Historical result does not establish current firmware or revision compatibility,P01
+macOS,Coexistence,NOT_FOUND,No operational evidence located,Updater package does not constitute support or a test,P01
+Linux,Service independence,NOT_APPLICABLE_TO_WINDOWS_SERVICE,No current result for this subsystem,Historical result does not establish current firmware or revision compatibility,P01
+macOS,Service independence,NOT_FOUND,No operational evidence located,Updater package does not constitute support or a test,P01
+Linux,Physical validation,NOT_VALIDATED_IN_THIS_SET,No current result for this subsystem,Historical result does not establish current firmware or revision compatibility,P01
+macOS,Physical validation,NOT_FOUND,No operational evidence located,Updater package does not constitute support or a test,P01

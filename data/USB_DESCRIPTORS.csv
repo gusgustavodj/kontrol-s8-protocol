@@ -1,0 +1,13 @@
+interface,alternate,class_subclass_protocol,endpoint,transfer_type,direction,max_packet_size,function,evidence_ref
+0,0,01/01/20,,,,,UAC2 Audio Control; controle via EP0 comum,U02
+1,0,01/02/20,,,,,Playback zero bandwidth,U02
+1,1,01/02/20,0x01,ISOCHRONOUS,HOST_TO_S8,112,Playback; 4 canais; 24 bits em subslot de 4 bytes,U01;U02
+1,1,01/02/20,0x81,ISOCHRONOUS,S8_TO_HOST,4,Feedback described; data not verified,U01;U02
+2,0,01/02/20,,,,,Capture zero bandwidth,U02
+2,1,01/02/20,0x82,ISOCHRONOUS,S8_TO_HOST,280,Capture descrito; 10 canais; 24 bits em subslot de 4 bytes,U01;U02
+3,0,01/03/00,0x02,BULK,HOST_TO_S8,512,MIDI Streaming 1.0; messages not validated,U01;U02
+3,0,01/03/00,0x83,BULK,S8_TO_HOST,512,MIDI Streaming 1.0; messages not validated,U01;U02
+4,0,FE/01/01,,,,,DFU runtime; controle via EP0 comum; fora de escopo,U01;U02
+5,0,03/00/00,0x84,INTERRUPT,S8_TO_HOST,64,HID IN,U01;U02;U03
+5,0,03/00/00,0x03,INTERRUPT,HOST_TO_S8,64,HID OUT,U01;U02;U03
+6,0,FF/BD/00,0x04,BULK,HOST_TO_S8,512,Display,U01;U02;D01

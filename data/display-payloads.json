@@ -1,0 +1,47 @@
+[
+  {
+    "id": "BLACK_0",
+    "screen": 0,
+    "bytes": 32,
+    "hex": "84 00 00 60 00 00 00 00 00 00 00 00 01 E0 01 10 01 00 FF 00 00 00 00 00 03 00 00 00 40 00 00 00",
+    "status": "OBSERVED_PAYLOAD",
+    "evidence_ref": "D01;D02",
+    "coverage_pairs": 65280
+  },
+  {
+    "id": "NO_OP_0",
+    "screen": 0,
+    "bytes": 28,
+    "hex": "84 00 00 60 00 00 00 00 00 00 00 00 01 E0 01 10 02 00 FF 00 03 00 00 00 40 00 00 00",
+    "status": "DOCUMENTARY_INSTANTIATION_OF_OBSERVED_BODY",
+    "evidence_ref": "D01;D02",
+    "coverage_pairs": 65280
+  },
+  {
+    "id": "SYNTHETIC_LITERAL_REPEAT_0",
+    "screen": 0,
+    "bytes": 40,
+    "hex": "84 00 00 60 00 00 00 00 00 00 00 00 01 E0 01 10 00 00 00 01 FF FF FF FF 01 00 FE FF 00 00 00 00 03 00 00 00 40 00 00 00",
+    "status": "SYNTHETIC_EXAMPLE_NOT_TRANSMITTED",
+    "evidence_ref": "D01;DOCUMENTARY_DERIVATION",
+    "coverage_pairs": 65280
+  },
+  {
+    "id": "BLACK_1",
+    "screen": 1,
+    "bytes": 32,
+    "hex": "84 00 01 60 00 00 00 00 00 00 00 00 01 E0 01 10 01 00 FF 00 00 00 00 00 03 00 00 00 40 00 01 00",
+    "status": "OBSERVED_PAYLOAD",
+    "evidence_ref": "D01;D02",
+    "coverage_pairs": 65280
+  },
+  {
+    "id": "NO_OP_1",
+    "screen": 1,
+    "bytes": 28,
+    "hex": "84 00 01 60 00 00 00 00 00 00 00 00 01 E0 01 10 02 00 FF 00 03 00 00 00 40 00 01 00",
+    "status": "DOCUMENTARY_INSTANTIATION_OF_OBSERVED_BODY",
+    "evidence_ref": "D01;D02",
+    "coverage_pairs": 65280
+  }
+]
